@@ -1,0 +1,7 @@
+﻿column,original_header,unit,indicator_id,source
+date,指标名称,单位,指标ID,来源
+yield_1y,中国:国债到期收益率:1年,%,M1001646,中证指数公司
+yield_10y,中国:国债到期收益率:10年,%,M1001654,中证指数公司
+usd_cny_mid,中间价:美元兑人民币,,M0000185,中国人民银行
+hs300,沪深300指数,点,M0020209,上海证券交易所
+shibor_1w,SHIBOR:1周,%,M0017139,全国银行间同业拆借中心

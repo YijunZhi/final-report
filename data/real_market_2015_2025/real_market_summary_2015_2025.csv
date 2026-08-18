@@ -1,0 +1,20 @@
+﻿item,value
+source_file,original_market_data_workbook.xlsx
+source_sheet,中国_国债到期收益率_1年
+date_filter,2015-01-01 to 2025-12-31 inclusive
+raw_2015_2025_rows,2744
+common_complete_rows,2674
+stationary_rows_after_diff,2673
+raw_first_date,2015-01-04
+raw_last_date,2025-12-31
+common_first_date,2015-01-05
+common_last_date,2025-12-31
+missing_count_raw_yield_1y,70
+missing_count_raw_yield_10y,70
+missing_count_raw_usd_cny_mid,69
+missing_count_raw_hs300,70
+missing_count_raw_shibor_1w,0
+stationary_transform_yields,"first difference of yield levels, percentage-point units"
+stationary_transform_fx_hs300,log return of level series
+zscore_rule,"z = (x - sample mean) / sample standard deviation, computed within 2015-2025 stationary sample"
+lag_interpretation,"one lag equals one previous common valid trading observation, not one calendar day"
