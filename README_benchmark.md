@@ -11,10 +11,10 @@ The final thesis workflow is organised as one Python file per task:
 - `src/plot_thesis_figures.py`: publication-ready figures.
 - `src/run_all.py`: end-to-end final workflow.
 
-Run the complete final workflow with:
+From the repository root, use a Python environment with the required
+dependencies installed and run the complete final workflow with:
 
 ```powershell
-conda activate mlbd
 python src\run_all.py
 ```
 
@@ -45,7 +45,6 @@ No approximate `TE-Discrete` result is used in the formal runner.
 ## Default Benchmark
 
 ```powershell
-conda activate mlbd
 python src\run_synthetic_benchmark.py
 ```
 
@@ -89,7 +88,6 @@ Use this to validate imports and print method parameters without running the
 benchmark:
 
 ```powershell
-conda activate mlbd
 python src\run_synthetic_benchmark.py --dry-run
 ```
 
