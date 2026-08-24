@@ -14,7 +14,8 @@ The final thesis workflow is organised as one Python file per task:
 Run the complete final workflow with:
 
 ```powershell
-C:\Users\Yijun.Zhi\vscode_env\envs\mlbd\python.exe src\run_all.py
+conda activate mlbd
+python src\run_all.py
 ```
 
 Final outputs:
@@ -44,7 +45,8 @@ No approximate `TE-Discrete` result is used in the formal runner.
 ## Default Benchmark
 
 ```powershell
-C:\Users\Yijun.Zhi\vscode_env\envs\mlbd\python.exe src\run_synthetic_benchmark.py
+conda activate mlbd
+python src\run_synthetic_benchmark.py
 ```
 
 Default parameters:
@@ -87,7 +89,8 @@ Use this to validate imports and print method parameters without running the
 benchmark:
 
 ```powershell
-C:\Users\Yijun.Zhi\vscode_env\envs\mlbd\python.exe src\run_synthetic_benchmark.py --dry-run
+conda activate mlbd
+python src\run_synthetic_benchmark.py --dry-run
 ```
 
 ## Method Parameters
