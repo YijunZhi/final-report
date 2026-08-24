@@ -48,7 +48,11 @@ def _patch_numpy_for_idtxl() -> None:
 
 
 def _configure_java_home() -> None:
-    env_root = Path(os.environ.get("CONDA_PREFIX", r"C:\Users\Yijun.Zhi\vscode_env\envs\mlbd"))
+    conda_prefix = os.environ.get("CONDA_PREFIX")
+    if not conda_prefix:
+        return
+
+    env_root = Path(conda_prefix)
     java_home = env_root / "Library" / "lib" / "jvm"
     java_bin = java_home / "bin"
     library_bin = env_root / "Library" / "bin"

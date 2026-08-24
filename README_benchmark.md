@@ -11,6 +11,18 @@ The final thesis workflow is organised as one Python file per task:
 - `src/plot_thesis_figures.py`: publication-ready figures.
 - `src/run_all.py`: end-to-end final workflow.
 
+## Requirements
+
+- Python 3.11
+- A Java runtime available on the system `PATH` for IDTxl's JIDT estimator
+
+Install the Python dependencies from the repository root:
+
+```powershell
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
 From the repository root, use a Python environment with the required
 dependencies installed and run the complete final workflow with:
 
